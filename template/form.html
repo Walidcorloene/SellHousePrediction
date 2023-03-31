@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Prediction Sells</title>
+    <style>
+      h1 {
+        font-size: 70px;
+        font-weight: 600;
+        background-image: linear-gradient(to top, #4475c9, #9043de);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-align:center
+      }
+      
+      form {
+        margin: 0 auto;
+        width: 50%;
+      }
+      
+      label {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+        font-weight: 600;
+        background-image: linear-gradient(to right, #4475c9, #9043de);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-align:center
+      }
+      
+      input[type="text"] {
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      
+
+      
+      /* CSS */
+      .button-29 {
+        align-items: center;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+        border: 0;
+        border-radius: 6px;
+        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono",monospace;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-decoration: none;
+        transition: box-shadow .15s,transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+        font-size: 18px;
+      }
+      
+      .button-29:focus {
+        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+      }
+      
+      .button-29:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+      
+      .button-29:active {
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        transform: translateY(2px);
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #0062cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prediction Sells</h1>
+      <form method="post" action="/">
+        <div class="form-group">
+          <label for="overall_material">Overall Material:</label>
+          <input type="text" id="overall_material" name="overall_material">
+        </div>
+
+        <div class="form-group">
+          <label for="construction_date">Construction Date:</label>
+          <input type="text" id="construction_date" name="construction_date">
+        </div>
+
+        <div class="form-group">
+          <label for="remodel_date">Remodel Date:</label>
+          <input type="text" id="remodel_date" name="remodel_date">
+        </div>
+
+        <div class="form-group">
+          <label for="masonry_veneer">Masonry Veneer:</label>
+          <input type="text" id="masonry_veneer" name="masonry_veneer">
+        </div>
+
+        <div class="form-group">
+          <label for="total_sq_ft">Total Square Feet:</label>
+          <input type="text" id="total_sq_ft" name="total_sq_ft">
+        </div>
+
+        <div class="form-group">
+          <label for="first_floor_sq">First Floor Square:</label>
+          <input type="text" id="first_floor_sq" name="first_floor_sq">
+        </div>
+
+        <div class="form-group">
+          <label for="above_grade">Above Grade (Ground):</label>
+          <input type="text" id="above_grade" name="above_grade">
+        </div>
+
+        <div class="form-group">
+          <label for="full_bathrooms">Full Bathrooms:</label>
+          <input type="text" id="full_bathrooms" name="full_bathrooms">
+        </div>
+
+        <div class="form-group">
+          <label for="total_rooms">Total Rooms:</label>
+          <input type="text" id="total_rooms" name="total_rooms">
+        </div>
+
+        <div class="form-group">
+          <label for="year_garage">Year Garage:</label>
+          <input type="text" id="year_garage" name="year_garage">
+        </div>
+
+        <div class="form-group">
+          <label for="garage_capacity">Size of Garage in Car Capacity:</label>
+          <input type="text" id="garage_capacity" name="garage_capacity">
+        </div>
+
+        <div class="form-group">
+          <label for="garage_sq_ft">Size of Garage in Square Feet:</label>
+          <input type="text" id="garage_sq_ft" name="garage_sq_ft">
+        </div>
+
+        <div class="form-group">
+          <label for="house_age">House Age:</label>
+          <input type="text" id="house_age" name="house_age">
+        </div>
+
+          <button type="submit"  class="button-29" role="button" style="float: right;">Predict</button>
+      </form>
+    </div>
+  </body>
+</html>
